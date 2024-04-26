@@ -1,0 +1,3 @@
+# ninja log v5
+0	10701	1713831608120915036	/home/yuwu3/SpaceQA/Code/Preprocess/3DAttriFlow/utils/ChamferDistancePytorch/chamfer3D/build/temp.linux-x86_64-cpython-310/home/yuwu3/SpaceQA/Code/Preprocess/3DAttriFlow/utils/ChamferDistancePytorch/chamfer3D/chamfer_cuda.o	8532ec71ad502ab2
+0	12585	1713831609996951159	/home/yuwu3/SpaceQA/Code/Preprocess/3DAttriFlow/utils/ChamferDistancePytorch/chamfer3D/build/temp.linux-x86_64-cpython-310/home/yuwu3/SpaceQA/Code/Preprocess/3DAttriFlow/utils/ChamferDistancePytorch/chamfer3D/chamfer3D.o	bead840ce589d91c

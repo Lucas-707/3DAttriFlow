@@ -1,0 +1,15 @@
+# ninja log v5
+0	16396	1713831647269668774	/home/yuwu3/SpaceQA/Code/Preprocess/3DAttriFlow/utils/Pointnet2.PyTorch/pointnet2/build/temp.linux-x86_64-cpython-310/src/pointnet2_api.o	8e773d4bdc3cd8e2
+0	20632	1713831651505750329	/home/yuwu3/SpaceQA/Code/Preprocess/3DAttriFlow/utils/Pointnet2.PyTorch/pointnet2/build/temp.linux-x86_64-cpython-310/src/group_points_gpu.o	adfb6434b0d6877d
+0	20663	1713831651537750944	/home/yuwu3/SpaceQA/Code/Preprocess/3DAttriFlow/utils/Pointnet2.PyTorch/pointnet2/build/temp.linux-x86_64-cpython-310/src/interpolate_gpu.o	af676134236d24e9
+0	20683	1713831651561751406	/home/yuwu3/SpaceQA/Code/Preprocess/3DAttriFlow/utils/Pointnet2.PyTorch/pointnet2/build/temp.linux-x86_64-cpython-310/src/ball_query_gpu.o	18cee90d8c3fd9f1
+0	21352	1713831652225764190	/home/yuwu3/SpaceQA/Code/Preprocess/3DAttriFlow/utils/Pointnet2.PyTorch/pointnet2/build/temp.linux-x86_64-cpython-310/src/sampling_gpu.o	334dd28dfaf760a1
+9	6981	1713832209756492064	/home/yuwu3/SpaceQA/Code/Preprocess/3DAttriFlow/utils/Pointnet2.PyTorch/pointnet2/build/temp.linux-x86_64-cpython-310/src/sampling.o	753171b1db079d2d
+11	7749	1713832504962169659	/home/yuwu3/SpaceQA/Code/Preprocess/3DAttriFlow/utils/Pointnet2.PyTorch/pointnet2/build/temp.linux-x86_64-cpython-310/src/sampling.o	753171b1db079d2d
+9	7720	1713832708550084669	/home/yuwu3/SpaceQA/Code/Preprocess/3DAttriFlow/utils/Pointnet2.PyTorch/pointnet2/build/temp.linux-x86_64-cpython-310/src/sampling.o	753171b1db079d2d
+10	7706	1713832884093460182	/home/yuwu3/SpaceQA/Code/Preprocess/3DAttriFlow/utils/Pointnet2.PyTorch/pointnet2/build/temp.linux-x86_64-cpython-310/src/sampling.o	753171b1db079d2d
+11	7753	1713833013455947611	/home/yuwu3/SpaceQA/Code/Preprocess/3DAttriFlow/utils/Pointnet2.PyTorch/pointnet2/build/temp.linux-x86_64-cpython-310/src/sampling.o	753171b1db079d2d
+11	7759	1713833013455947611	/home/yuwu3/SpaceQA/Code/Preprocess/3DAttriFlow/utils/Pointnet2.PyTorch/pointnet2/build/temp.linux-x86_64-cpython-310/src/interpolate.o	9def6c73490e394c
+11	7775	1713833013479948073	/home/yuwu3/SpaceQA/Code/Preprocess/3DAttriFlow/utils/Pointnet2.PyTorch/pointnet2/build/temp.linux-x86_64-cpython-310/src/group_points.o	bcceca6cee2d8cda
+9	7446	1713833107825762107	/home/yuwu3/SpaceQA/Code/Preprocess/3DAttriFlow/utils/Pointnet2.PyTorch/pointnet2/build/temp.linux-x86_64-cpython-310/src/sampling.o	753171b1db079d2d
+11	7102	1713833320345848311	/home/yuwu3/SpaceQA/Code/Preprocess/3DAttriFlow/utils/Pointnet2.PyTorch/pointnet2/build/temp.linux-x86_64-cpython-310/src/ball_query.o	fd413591af5d784c

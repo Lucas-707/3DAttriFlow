@@ -2,7 +2,9 @@ import argparse
 import torch
 import munch
 import yaml
-from dataset_svr.trainer_dataset import build_dataset_val
+# from dataset_svr.trainer_dataset import build_dataset_val
+from dataset_svr.dataset_clevr import build_dataset_val
+
 import torch
 from utils.train_utils import *
 import logging
@@ -49,14 +51,27 @@ def val():
 
     with tqdm(dataloader_test) as t:
         for i, data in enumerate(t):
+            # data: ['pointcloud_path', 'image_path', 'name', 'category', 'points', 'image']
             with torch.no_grad():
-        
-                images = data['image'].cuda()
+                # print("data batch keys: ", data.keys())
+                # print("point path: ", data['pointcloud_path'])
+                images = data['image'].cuda() # Bx3x224x224
                 gt = data['points'].cuda()
 
                 batch_size = gt.shape[0]
                 
                 pred_points = net(images)
+                # print("pred_points: ", pred_points.shape)
+                pc_path = data['pointcloud_path'][0]
+                pc_ids = pc_path.split('/')[-3:]
+                output_dir = "/home/yuwu3/SpaceQA/Code/Preprocess/3DAttriFlow/output"
+                save_dir = os.path.join( *([output_dir]+pc_ids[:-1]) )
+                if not os.path.exists(save_dir):
+                    os.makedirs(save_dir)
+                save_path = os.path.join( *([output_dir]+pc_ids) )
+                # print("save path: ", save_path)
+                torch.save(pred_points, save_path)
+
 
                 loss_p, loss_t = calc_cd(pred_points, gt)
 

@@ -1,4 +1,4 @@
-batch_size: 24
+batch_size: 1
 workers: 8
 nepoch: 400
 model_name: SVR_3DAttriFlow
@@ -60,7 +60,7 @@ random_translation: False
 anisotropic_scaling: False
 demo: False
 sample: False
-pointcloud_path: 'Path/ShapeNetV1PointCloud'
-image_path: 'Path/ShapeNetV1Renderings'
-cache_path: 'Path/atlas/cache'
-cache_path_test: 'Path/cache_test'
+pointcloud_path: '/home/yuwu3/SpaceQA/Code/Preprocess/3DAttriFlow/shapenet_data/ShapeNetV1PointCloud'
+image_path: '/home/yuwu3/SpaceQA/Code/Preprocess/3DAttriFlow/shapenet_data/ShapeNetV1Renderings'
+cache_path: './cache'
+cache_path_test: './cache_test'

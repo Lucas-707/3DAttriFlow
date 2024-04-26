@@ -1,0 +1,6 @@
+shapenet_data/
+checkpoints/
+finetune_output/
+output/
+cache/
+cache_test/

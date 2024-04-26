@@ -2,7 +2,10 @@ import argparse
 import torch
 import munch
 import yaml
-from dataset_svr.trainer_dataset import build_dataset
+# from dataset_svr.trainer_dataset import build_dataset
+from dataset_svr.dataset_clevr import build_dataset
+
+
 import torch.optim as optim
 import torch
 from models.PC.utils import fps_subsample
@@ -77,6 +80,12 @@ def train():
     model_module = importlib.import_module('.%s' % args.model_name, 'models')
     net = torch.nn.DataParallel(model_module.Model(args))
     net.cuda()
+    
+    # load pretrain ckpt for finetuning
+    ckpt = torch.load(args.load_model)
+    net.module.load_state_dict(ckpt['net_state_dict'])
+    logging.info("%s's previous weights loaded." % args.model_name)
+
 
     print('# encoder parameters:', sum(param.numel() for param in net.module.encoder.parameters()))
     print('# decoder parameters:', sum(param.numel() for param in net.module.decoder.parameters()))
